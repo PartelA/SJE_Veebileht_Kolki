@@ -1,1 +1,2 @@
-# SJE_Veebileht_Kolki
+# Sissejuhatus Erialasse LTAT.03.002 Veebileht
+See repositoorium on loodud Sissejuhatus Erialasse aine veebilehe grupitöö jaoks. Plaanitud veebileht sisaldab üldisemat informatsiooni hõlmavat pealehte ja alamteemasid käsitlevaid pealehti. Erinevaid alamlehti tuleks arendada erinevates <em>sub-branch</em>-ides. Esmalt on kavas valmis teha pealeht ja seejärel hakata töötama alamlehtede kallal vastavalt tööjaotusele. Täpsem info projekti kohta on toodud Moodle'is vastava ülesande all.
