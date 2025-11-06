@@ -1,11 +1,45 @@
+/*HTML, BODY*/
+html, body {
+    margin: 0 auto;
+    padding: 0;
+}
+
 * {
     background-color: #1C1C1C;
     color: white;
-    margin-left: 25px;
-    margin-right: 25px;
+}
+/*MAIN*/
+.appearance {
+    border-top: 1px solid ;
 }
 
 img {
     max-width: 100%; 
     height: auto; 
+}
+
+/*FOOTER*/
+footer {
+    border-top: 1px solid #5c5c5c81;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: radial-gradient(circle at center, #202020, #0f0f0f);
+}
+
+footer *{
+    background: 0;
+}
+
+footer p {
+    font-size: 12px;
+    max-width: 50vw;
+}
+
+footer img {
+    max-width: 2vw;
+    min-width: 30px;
+    height: auto;
+    margin: 15px;
 }
