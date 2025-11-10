@@ -5,7 +5,8 @@ html, body {
 }
 
 main {
-    margin: 5%;
+    margin: 10%;
+    margin-top: 2%;
 }
 
 header {
@@ -33,6 +34,50 @@ nav {
 /*MAIN*/
 .appearance {
     border-top: 1px solid ;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.intro .tekst {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.intro .pilt {
+    height: auto;
+    border-radius: 10px;
+}
+
+.appearance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.appearance .tekst {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.appearance .pilt {
+    height: auto;
+    border-radius: 10px;
+}
+
+.appearance :nth-child(1) {
+    order: 1;
 }
 
 .nupp {
