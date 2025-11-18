@@ -1,8 +1,30 @@
 html, body {
     margin: 0 auto;
     padding: 0;
+    font-family:Arial;
 }
 
+main {
+    margin: 10%;
+    margin-top: 2%;
+}
+
+header {
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    background-color: rgba(19, 22, 26, 0.9);
+}
+
+header h1, nav {
+    background-color: rgba(19, 22, 26, 0);
+}
+
+nav {
+    margin: 10px;
+}
 * {
     background-color: #1C1C1C;
     color: white;
@@ -34,6 +56,130 @@ img {
 	top:1px;
 }
 
+.intro {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: top;
+    padding: 10px;
+}
+
+.intro .tekst {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.intro .pilt {
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 600px) {
+
+    .esimene {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .esimene .pilt {
+        flex-shrink: 0;
+        flex: 1;
+    }
+
+    .esimene .tekst {
+        flex: 2;
+    }
+
+    .esimene .pilt img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .esimene {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .esimene .pilt img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .teine {
+        display: flex;
+        align-items: top;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .teine .pilt {
+        flex-shrink: 0;
+        flex: 1;
+    }
+
+    .teine .tekst {
+        flex: 2;
+    }
+
+    .teine .pilt img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .teine {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teine .pilt img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+.esimene {
+    border-top: 1px solid ;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.teine {
+    border-top: 1px solid ;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.kolmas {
+    border-top: 1px solid ;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
 footer {
     border-top: 1px solid #5c5c5c81;
     display: flex;
@@ -58,12 +204,4 @@ footer img {
     min-width: 30px;
     height: auto;
     margin: 15px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin: 0 auto;
-    gap: clamp(20px, 8vw, 100px);
 }
