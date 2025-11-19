@@ -24,7 +24,7 @@ header a{
     transition: text-shadow 1s ease-out;
 }
 
-header a:hover{
+header h1 a:hover{
     text-shadow: 2px 1px 2px greenyellow;
 }
 
@@ -106,9 +106,14 @@ body.light-mode header a{
 }
 
 body.light-mode a {
-    color: #0f0f0f;
+    color: brown;
+}
+
+body.light-mode a:active {
+    color: black;
 }
 
 body.light-mode .nupp {
     color: white;
 }
+

@@ -1,6 +1,9 @@
+/*Custom font googlelt*/
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
 /*MAIN*/
 main {
-    margin: 3% 20%;
+    margin: 2% 20%;
     font-family: arial, sans-serif;
 }
 
@@ -10,13 +13,20 @@ img {
     border-radius: 10px;
 }
 
-h2 {
+main h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: normal;
+    font-size: 32px;
 }
 
-main a {
+main a, .rõhk{
     color: greenyellow;
+}
+
+body.light-mode .rõhk{
+    color: brown;
 }
 
 main a:hover{
@@ -33,7 +43,7 @@ main a:active{
 }
 .intro {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px;
 }
