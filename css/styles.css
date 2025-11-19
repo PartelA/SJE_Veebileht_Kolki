@@ -1,14 +1,12 @@
-/*HTML, BODY*/
+/*------------------------------------ HTML, BODY ------------------------------------*/
 html, body {
     margin: 0 auto;
     padding: 0;
+    background-color: #1C1C1C;
+    color: white;
 }
 
-main {
-    margin: 10%;
-    margin-top: 2%;
-}
-
+/*------------------------------------ HEADER, NAVBAR ------------------------------------*/
 header {
     position: sticky;
     top: 0;
@@ -16,7 +14,22 @@ header {
     justify-content: space-evenly;
     margin: 0 auto;
     font-family: arial, sans-serif;
+    text-align: center;
     background-color: rgba(19, 22, 26, 0.9);
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    transition: text-shadow 1s ease-out;
+}
+
+header h1 a:hover{
+    text-shadow: 2px 1px 2px greenyellow;
+}
+
+header a:active{
+    color: rgb(240, 255, 215);
 }
 
 header h1, nav {
@@ -27,91 +40,34 @@ nav {
     margin: 10px;
 }
 
-* {
-    background-color: #1C1C1C;
-    color: white;
-}
-/*MAIN*/
-.appearance {
-    border-top: 1px solid ;
-}
-
-.intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.intro .tekst {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-right: 10px;
-}
-
-.intro .pilt {
-    height: auto;
-    border-radius: 10px;
-}
-
-.appearance {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.appearance .tekst {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 10px;
-    margin-left: 10px;
-}
-
-.appearance .pilt {
-    height: auto;
-    border-radius: 10px;
-}
-
-.appearance :nth-child(1) {
-    order: 1;
-}
-
 .nupp {
-	background-color:#575757;
+	background: linear-gradient(140deg, #575757b4, #3d3d3dbb);
 	border-radius:28px;
-	border:1px solid #ffffff;
+	border:2px solid greenyellow;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
 	font-size:17px;
 	padding:16px 31px;
+    margin: 2px;
 	text-decoration:none;
     white-space: nowrap;
+    transition: background 0.4s ease, transform 0.4s ease;
 }
 .nupp:hover {
-	background-color:#3d3d3d;
+	background: linear-gradient(120deg, #575757, #3d3d3d);
+    transform: scale(1.05);
 }
 .nupp:active {
 	position:relative;
 	top:1px;
 }
 
-img {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 10px;
-}
-
-/*FOOTER*/
+/*------------------------------------ FOOTER ------------------------------------*/
 footer {
-    border-top: 1px solid #5c5c5c81;
+    border-top: 1px solid greenyellow;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 5px 10px;
     background: radial-gradient(circle at center, #202020, #0f0f0f);
@@ -124,6 +80,7 @@ footer *{
 footer p {
     font-size: 12px;
     max-width: 50vw;
+    color: white;
 }
 
 footer img {
@@ -132,3 +89,31 @@ footer img {
     height: auto;
     margin: 15px;
 }
+
+/*------------------------------------ Light-mode ------------------------------------*/
+
+.light-mode {
+    background-color: antiquewhite;
+    color: #1C1C1C;
+}
+
+body.light-mode header h1{
+    color: white;
+}
+
+body.light-mode header a{
+    color: white;
+}
+
+body.light-mode a {
+    color: brown;
+}
+
+body.light-mode a:active {
+    color: black;
+}
+
+body.light-mode .nupp {
+    color: white;
+}
+

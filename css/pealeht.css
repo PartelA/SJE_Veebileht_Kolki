@@ -1,0 +1,96 @@
+/*Custom font googlelt*/
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+/*MAIN*/
+main {
+    margin: 2% 20%;
+    font-family: arial, sans-serif;
+}
+
+img {
+    max-width: 30vw; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+main a, .rõhk{
+    color: greenyellow;
+}
+
+body.light-mode .rõhk{
+    color: brown;
+}
+
+main a:hover{
+    color: gray;
+}
+
+main a:active{
+    color: white;
+}
+
+/*Intro*/
+.tekst {
+    max-width: 25vw;
+}
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.intro .tekst {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+/*Appearance*/
+
+.appearance {
+    border-top: 1px solid;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.appearance :nth-child(1) {
+    order: 1;
+}
+
+/*Gadgets*/
+.gadgets {
+    border-top: 1px solid ;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;   
+}
+
+
+/*Mentality*/
+.mentality {
+    border-top: 1px solid ;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.mentality :nth-child(1) {
+    order: 1;
+}
