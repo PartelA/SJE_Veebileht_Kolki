@@ -2,6 +2,8 @@ html, body {
     margin: 0 auto;
     padding: 0;
     font-family:Arial;
+    background-color: #1C1C1C;
+    color: white;
 }
 
 main {
@@ -25,10 +27,6 @@ header h1, nav {
 
 nav {
     margin: 10px;
-}
-* {
-    background-color: #1C1C1C;
-    color: white;
 }
 
 img {
@@ -280,4 +278,30 @@ footer img {
     nav {
         margin: 0;
     }
+}
+
+
+.light-mode {
+    background-color: antiquewhite;
+    color: #1C1C1C;
+}
+
+body.light-mode header h1{
+    color: white;
+}
+
+body.light-mode header a{
+    color: white;
+}
+
+body.light-mode a {
+    color: brown;
+}
+
+body.light-mode a:active {
+    color: black;
+}
+
+body.light-mode .nupp {
+    color: white;
 }
