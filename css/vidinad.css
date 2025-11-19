@@ -10,6 +10,7 @@ main {
 }
 
 header {
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-evenly;
@@ -77,6 +78,9 @@ img {
     border-radius: 10px;
 }
 
+header .nav-icon {
+    display: none; 
+}
 
 @media (min-width: 600px) {
 
@@ -204,4 +208,76 @@ footer img {
     min-width: 30px;
     height: auto;
     margin: 15px;
+}
+
+
+#js-parallax {
+    width: 100%;
+    height: 700px; 
+    margin-top: 0%;
+    margin-bottom: 5%;
+    background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*HVw8w6EZByyTIWHkJx6Odw.jpeg");
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    #js-parallax {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-attachment: scroll;
+        background-size: cover;
+        min-height: 300px;
+        max-height: 500px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    
+    header {
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10px; 
+    }
+    
+    header .nav-icon {
+        display: block; 
+        font-size: 30px;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        line-height: 1;
+    }
+
+    header #lingid {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        background-color: rgba(19, 22, 26, 0.95);
+        z-index: 1000;
+        flex-direction: column;
+    }
+    
+    header #lingid.responsive {
+        display: flex;
+    }
+    
+    header #lingid .nupp {
+        display: block; 
+        border-radius: 0;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #57575780;
+        padding: 15px 20px;
+        background-color: transparent;
+    }
+    nav {
+        margin: 0;
+    }
 }

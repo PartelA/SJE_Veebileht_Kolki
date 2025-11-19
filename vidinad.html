@@ -10,13 +10,17 @@
     <body>
         <header id="algus">
             <h1>Millised vidinad?</h1>
-            <nav>
+            <a href="javascript:void(0);" class="nav-icon" onclick="toggleNav()">
+                ☰
+            </a>
+            <nav id="lingid">
                 <a href="./ilu.html" class="nupp">Väline Ilu</a>
                 <a href="./vidinad.html" class="nupp">Vidinad ja Jubinad</a>
                 <a href="./hingeelu.html" class="nupp">Hingeelu</a>
             </nav>
         </header>
     <main>
+        <div id="js-parallax"></div>
         <section class="intro">
             <div class="tekst">
                 <h2>Progeja ning tema vidinad</h2>
@@ -76,5 +80,6 @@ Mauris ligula enim, rutrum sed auctor sit amet, rutrum quis orci. Nulla ultrices
         </p>
         <a href="https://github.com/PartelA/SJE_Veebileht_Kolki.git" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Github_logo_svg.svg/1200px-Github_logo_svg.svg.png?20230420150203" alt="Github REPO"></a>
     </footer>
+    <script src="scripts/hamburger.js"></script>
     </body>
 </html>
