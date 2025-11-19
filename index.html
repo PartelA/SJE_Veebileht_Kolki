@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <title>Progeja käsiraamat</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pealeht.css">
   <link rel="icon" href="./media/programming_logo.png" type="image/x-icon">
   <script src="scripts/scripts.js" defer></script>
 </head>
@@ -20,37 +21,41 @@
         <a href="./ilu.html" class="nupp">Väline Ilu</a>
         <a href="./vidinad.html" class="nupp">Vidinad ja Jubinad</a>
         <a href="./hingeelu.html" class="nupp">Hingeelu</a>
+        <a class="nupp" id="theme-toggle">🌞</a>
     </nav>
   </header>
 
 <!-- MAIN: main content, one section per subpage introduction -->
   <main>
-    <section class="intro">
-        <div class="tekst">
-          <h2>Näe välja nagu progeja, valda tehnikat nagu progeja, mõtle nagu progeja!</h2>
-          <!-- Format img with css -->
-          <p>
-              Programeerija (ladina k. <em>Programmatarius</em>) on tänapäeval levinud tõug. 
-              Tõenäoliselt oled mõnda kohanud tänaval, koolis,
-              töö juures või enda pesas arvuti taga vaikselt nohistamas (pssst..parem mitte segada). Need
-              müstilised elukad on modernse maailma nähtamatu taustajõud, kellest ei saa paraku üle ega
-              ümber. Olemed loonud selle käsiraamatu, et saaksid neid ja nende salapäraseid viise
-              paremini tundma õppida. Toome ühe progeja teieni kõige saba ja sarvedega, andes täieliku
-              ülevaate olulistest punktidest.
-          </p>
-          <p>
-              Oled ise Progepets (sünonüüm programmeerijale, progejad tarvitavad) ja loed seda lõiku!
-              Patsuta endale õlale, et oled nii kaugele jõudnud? Siiski julgustame sind edasi lugema,
-              et saada kinnitust enda eluviiside õigsusele ja ehk tutvuda põhjalikumalt mõne uue nõksuga.
-          </p>
-        </div>
-        <div class="pilt">
-          <img src="media/intro.png" alt="Programmer peeking over screen">
+    <section>
+      <h2>Näe välja nagu progeja, valda tehnikat nagu progeja, mõtle nagu progeja!</h2>
+        <div class="intro">
+          <div class="tekst">
+            <!-- Format img with css -->
+            <p>
+                Programeerija (ladina k. <em>Programmatarius</em>) on tänapäeval levinud tõug. 
+                Tõenäoliselt oled mõnda kohanud tänaval, koolis,
+                töö juures või enda pesas arvuti taga vaikselt nohistamas (pssst..parem mitte segada). Need
+                müstilised elukad on modernse maailma nähtamatu taustajõud, kellest ei saa paraku üle ega
+                ümber. Olemed loonud selle käsiraamatu, et saaksid neid ja nende salapäraseid viise
+                paremini tundma õppida. Toome ühe progeja teieni kõige saba ja sarvedega, andes täieliku
+                ülevaate olulistest punktidest.
+            </p>
+            <p>
+                Oled ise Progepets (sünonüüm programmeerijale, progejad tarvitavad) ja loed seda lõiku!
+                Patsuta endale õlale, et oled nii kaugele jõudnud? Siiski julgustame sind edasi lugema,
+                et saada kinnitust enda eluviiside õigsusele ja ehk tutvuda põhjalikumalt mõne uue nõksuga.
+            </p>
+          </div>
+          <div class="pilt">
+            <img src="media/intro.png" alt="Programmer peeking over screen">
+          </div>
         </div>
     </section>
 
 <!-- FIRST SECTION: appearance -->
     <section class="appearance">
+
       <div class="tekst">
         <h2>Sokid ja Sandaalid</h2>
         <p>Ehk esmamulje algab alati välimusest. Mida selga panna? Kui tihti pesus käia? 
@@ -58,25 +63,30 @@
             Ära kahtle, vaata parem ise järgi.. <a href="./ilu.html">LOE LÄHEMALT</a>
         </p>
       </div>
+
       <div class="pilt">
         <img src="media/appearance.jpg" alt="appearance">
       </div>
+
     </section>
 
 <!-- SECOND SECTION: gadgets -->
     <section class="gadgets">
-        <h2>Asendamatu elektroonika</h2>
-        <p>
-            Sarnaselt <em>Ironmanile</em> saab progeja enda erakordsed võimed teda ümbritsevast
-            tehnoloogiast. Valmis tuleb olla igaks olukorraks ja täpne varustus (loe: relvastus)
-            sõltub takistusest mida tuleb ületada. Mustkunstnik ei avalda kunagi enda trikke, aga
-            meie avaldame progeja omadest vähemalt mõned..<a href="./vidinad.html">LOE LÄHEMALT</a>
-        </p>
+        <div class="tekst">
+          <h2>Asendamatu elektroonika</h2>
+          <p>
+              Sarnaselt <em>Ironmanile</em> saab progeja enda erakordsed võimed teda ümbritsevast
+              tehnoloogiast. Valmis tuleb olla igaks olukorraks ja täpne varustus (loe: relvastus)
+              sõltub takistusest mida tuleb ületada. Mustkunstnik ei avalda kunagi enda trikke, aga
+              meie avaldame progeja omadest vähemalt mõned..<a href="./vidinad.html">LOE LÄHEMALT</a>
+          </p>
+        </div>
         <img src="media/gadgets.png" alt="gadgets">
     </section>
 
 <!-- THIRD SECTION: mentality -->
     <section class="mentality">
+      <div class="tekst">
         <h2>Kuplialune maastik</h2>
         <p>
             Mõistus on programmeerijal kahtlemata vahe ja langetatud otsused praktilised. Millised
@@ -85,7 +95,8 @@
             tunneb? Meie eksperdid võtavad üksipulgi lahti programmeerija
             ajus funktsioneeriva <em>Decision Tree</em>..<a href="./hingeelu.html">LOE LÄHEMALT</a>
         </p>
-        <img src="media/programmer_thinking.png" alt="the thinker">
+      </div>
+      <img src="media/giga_programmer.jpg" alt="the thinker">
     </section>
 
   </main>
