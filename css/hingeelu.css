@@ -1,9 +1,27 @@
+/*Custom font googlelt*/
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
 html, body {
-    margin: 0 auto;
-    padding: 0;
+    font-family: arial, sans-serif;
 }
 
-* {
-    background-color: #1c1c1c;
-    color: white;
+.täispikkus {
+    margin-top: -80px;
+    text-align: center;
+    align-items: center;
+    padding-top: 25vh;
+    font-size: 64px;
+    font-family: "Faculty Glyphic", sans-serif;;
+
+    height: 25vh;
+    background-image: url(https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+
+.sisu {
+    background-color: #1C1C1C;
+    padding: 60px 20px;
+    text-align: center;
 }
