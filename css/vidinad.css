@@ -59,7 +59,7 @@ img {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: top;
+    align-items: flex-start;
     padding: 10px;
 }
 
@@ -124,7 +124,7 @@ header .nav-icon {
 
     .teine {
         display: flex;
-        align-items: top;
+        align-items: flex-start;
         flex-direction: row-reverse;
         justify-content: space-between;
         gap: 20px;
