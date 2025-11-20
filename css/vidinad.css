@@ -192,13 +192,12 @@ header .nav-icon {
 
 
 footer {
-    border-top: 1px solid #5c5c5c81;
+    border-top: 1px solid greenyellow;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 5px 10px;
     background: radial-gradient(circle at center, #202020, #0f0f0f);
-    gap: 2vw
 }
 
 footer *{
@@ -208,6 +207,7 @@ footer *{
 footer p {
     font-size: 12px;
     max-width: 50vw;
+    color: white;
 }
 
 footer img {
@@ -216,6 +216,7 @@ footer img {
     height: auto;
     margin: 15px;
 }
+
 
 
 #js-parallax {
