@@ -35,20 +35,22 @@ img {
 }
 
 .nupp {
-	background-color:#575757;
+	background: linear-gradient(140deg, #575757b4, #3d3d3dbb);
 	border-radius:28px;
-	border:1px solid #ffffff;
+	border:2px solid greenyellow;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
 	font-size:17px;
 	padding:16px 31px;
+    margin: 2px;
 	text-decoration:none;
     white-space: nowrap;
+    transition: background 0.4s ease, transform 0.4s ease;
 }
 .nupp:hover {
-	background-color:#3d3d3d;
+	background: linear-gradient(120deg, #575757, #3d3d3d);
+    transform: scale(1.05);
 }
 .nupp:active {
 	position:relative;
@@ -61,6 +63,10 @@ img {
     flex-direction: row;
     align-items: flex-start;
     padding: 10px;
+}
+
+.intro {
+    background-color: #262626;
 }
 
 .intro .tekst {
@@ -89,6 +95,7 @@ header .nav-icon {
         gap: 20px;
         max-width: 1500px;
         margin: 0 auto;
+        background-color: #262626;
     }
 
     .esimene .pilt {
@@ -130,6 +137,7 @@ header .nav-icon {
         gap: 20px;
         max-width: 1500px;
         margin: 0 auto;
+        background-color: #262626;
     }
 
     .teine .pilt {
@@ -179,6 +187,7 @@ header .nav-icon {
     border-top: 1px solid ;
     padding-bottom: 30px;
     padding-top: 30px;
+    background-color: #262626;
 }
 
 
@@ -283,6 +292,30 @@ footer img {
 
 .light-mode {
     background-color: antiquewhite;
+    color: #1C1C1C;
+}
+.light-mode .intro {
+    background-color: antiquewhite;
+    color: #1C1C1C;
+}
+
+.light-mode .intro {
+    background-color: rgb(248, 230, 207);
+    color: #1C1C1C;
+}
+
+.light-mode .esimene {
+    background-color: rgb(248, 230, 207);
+    color: #1C1C1C;
+}
+
+.light-mode .teine {
+    background-color: rgb(248, 230, 207);
+    color: #1C1C1C;
+}
+
+.light-mode .kolmas {
+    background-color: rgb(248, 230, 207);
     color: #1C1C1C;
 }
 
