@@ -11,7 +11,7 @@ html, body {
     align-items: center;
     padding-top: 25vh;
     font-size: 64px;
-    font-family: "Faculty Glyphic", sans-serif;;
+    font-family: "Faculty Glyphic", sans-serif;
 
     height: 25vh;
     background-image: url(https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D);
@@ -22,6 +22,60 @@ html, body {
 
 .sisu {
     background-color: #1C1C1C;
-    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 3rem 20vw;
     text-align: center;
+    align-items: center;
+    
+}
+
+.box {
+    max-width: 680px;
+    max-height: auto;
+
+
+    border: 2px solid greenyellow;
+    border-radius: 25px;
+    margin-bottom: 20px;
+
+    background: linear-gradient(140deg, #3c3c2b, #131313);
+    background-size: 400% 400%;
+    animation: flow 15s ease infinite;
+
+    box-sizing: border-box;
+    padding: 25px 5vw;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.box h2{
+    margin: 0 0 25px 0;
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+.box p {
+    text-align: justify;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 12.5px;
 }
