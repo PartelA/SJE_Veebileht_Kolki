@@ -50,9 +50,9 @@ html, body {
     margin-bottom: 20px;
 
     background: 
-        linear-gradient(140deg, #292929, #131313) padding-box, 
+        linear-gradient(140deg, #292929ef, #131313) padding-box, 
         linear-gradient(180deg, greenyellow, whitesmoke) border-box;
-    background-size: 200% 200%;
+    background-size: 100% 100%;
     animation: flow 1s ease-in;
 
     box-sizing: border-box;
@@ -128,4 +128,27 @@ html, body {
   top: -35%;
   background-color: yellowgreen;
   transform: translateX(-50%);
+}
+
+/*Back to main button*/
+
+body.light-mode .sisu h1{
+    border-color: #1C1C1C;
+}
+
+body.light-mode .täispikkus {
+    color: white;
+}
+
+body.light-mode .sisu {
+    color: #1C1C1C;
+    background-color: antiquewhite;
+}
+
+body.light-mode .box {
+    color: white;
+    border: 0px;
+    background: 
+        linear-gradient(0deg,#131313c3, #292929) padding-box, 
+        linear-gradient(360deg, greenyellow, rgb(0, 0, 0)) border-box;
 }
