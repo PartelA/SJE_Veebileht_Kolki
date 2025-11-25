@@ -1,6 +1,7 @@
 /*Custom font googlelt*/
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
 
+/*Põhiseaded*/
 html, body {
     font-family: arial, sans-serif;
 }
@@ -19,6 +20,7 @@ html, body {
     background-position: fixed;
     background-attachment: fixed;
 }
+/*Põhisisu ja tiitlid*/
 
 .sisu {
     background-color: #1C1C1C;
@@ -31,18 +33,27 @@ html, body {
     
 }
 
+.sisu h1 {
+    padding-bottom: 40px;
+    border-bottom: solid 1px whitesmoke;
+}
+
+/*box ja selle sisu*/
+
 .box {
     max-width: 680px;
     max-height: auto;
 
 
-    border: 2px solid greenyellow;
+    border: 2px solid transparent;
     border-radius: 25px;
     margin-bottom: 20px;
 
-    background: linear-gradient(140deg, #3c3c2b, #131313);
-    background-size: 400% 400%;
-    animation: flow 15s ease infinite;
+    background: 
+        linear-gradient(140deg, #292929, #131313) padding-box, 
+        linear-gradient(180deg, greenyellow, whitesmoke) border-box;
+    background-size: 200% 200%;
+    animation: flow 1s ease-in;
 
     box-sizing: border-box;
     padding: 25px 5vw;
@@ -58,7 +69,7 @@ html, body {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
 }
 
@@ -66,6 +77,9 @@ html, body {
 .box h2{
     margin: 0 0 25px 0;
     font-family: "Faculty Glyphic", sans-serif;
+    font-weight: lighter;
+    border-bottom: 1px solid white;
+    padding-bottom: 25px;
 }
 
 .box p {
@@ -78,4 +92,40 @@ html, body {
     width: auto;
     height: auto;
     border-radius: 12.5px;
+}
+
+/*Back to main button*/
+
+.edasinupp {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid yellowgreen;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background-color: #292929;
+    z-index: 1;
+}
+
+.edasinupp::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  width: 150%;
+  height: 150%;
+  background-color: rgba(0, 0, 0, 0.05);
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.edasinupp:hover::before {
+  top: -35%;
+  background-color: yellowgreen;
+  transform: translateX(-50%);
 }
