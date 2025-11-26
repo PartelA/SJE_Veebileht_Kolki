@@ -339,3 +339,41 @@ body.light-mode a:active {
 body.light-mode .nupp {
     color: white;
 }
+.box {
+    max-width: 680px;
+
+    border: 2px solid transparent;
+    border-radius: 25px;
+    margin-bottom: 20px;
+
+    background: 
+        linear-gradient(140deg, #292929ef, #131313) padding-box, 
+        linear-gradient(180deg, greenyellow, whitesmoke) border-box;
+    background-size: 100% 100%;
+    animation: flow 1s ease-in;
+
+    box-sizing: border-box;
+    padding: 25px 5vw;
+    text-align: center;
+    align-items: center;
+}
+
+.box h2{
+    margin: 0 0 25px 0;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: lighter;
+    border-bottom: 1px solid white;
+    padding-bottom: 25px;
+}
+
+.box p {
+    text-align: justify;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 12.5px;
+}
