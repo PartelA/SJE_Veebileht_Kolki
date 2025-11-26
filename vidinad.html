@@ -12,7 +12,7 @@
     </head>
     
     <body>
-        <header id="algus">
+        <header>
             <h1><a href="./index.html">Programmeerija käsiraamat</a></h1>
             <a href="javascript:void(0);" class="nav-icon" onclick="toggleNav()">
                 ☰
@@ -24,8 +24,9 @@
                 <a class="nupp" id="theme-toggle">🌞</a>
             </nav>
         </header>
-    <main>
+    <main class="sisu", id="algus">
         <div id="js-parallax"></div>
+        <h1>Tutvu erinevate vidinatega</h1>
         <section class="box">
             <div class="tekst">
                 <h2>Progeja ning tema vidinad</h2>
@@ -38,11 +39,8 @@
         <section class="box">
             <div class="tekst">
                 <h2>Kummipart, kes aitab hädast välja</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id tempor ante. Mauris iaculis scelerisque ornare. Nunc urna magna, aliquet sed varius non, tristique vel mi. Curabitur in vestibulum turpis. Maecenas et risus diam. Cras elementum eros mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et consequat dui. Nullam elementum egestas diam, ac placerat ligula ultricies eget.
-
-Maecenas facilisis quam et tincidunt mollis. Donec malesuada ut lectus vitae dignissim. Phasellus sed iaculis dui, ac bibendum elit. Integer ac feugiat nulla. Nullam id orci ut purus fermentum bibendum. Proin pulvinar mattis lorem. Nam malesuada vehicula quam pharetra finibus. Phasellus ornare dui accumsan cursus bibendum. Morbi consectetur odio ut cursus hendrerit. Suspendisse varius luctus ante, quis porta neque consequat at. Integer congue pharetra ligula, quis convallis massa aliquam sit amet. In tincidunt porttitor facilisis. Etiam nec fermentum elit. Ut consectetur odio ut nunc lacinia pulvinar. Donec elit sapien, sodales molestie tellus in, placerat fringilla massa.
-
-Mauris ligula enim, rutrum sed auctor sit amet, rutrum quis orci. Nulla ultrices, lectus ullamcorper accumsan placerat, mauris purus placerat sapien, id vestibulum felis tortor congue nunc. Nullam in nisl commodo, luctus sapien a, vestibulum nisl. Pellentesque gravida commodo turpis, in faucibus lacus.</p>
+                <p>Kas oled kijrutanud koodi ja sattunud mõne vea otsa, millest ei saa kohe üldse sotti? Seal tuleb appi silumispart! (<em>Rubber duck debugging</em>). 
+                    Sa selgitad talle üksipulgi oma koodi lahti ning protsessi käigus ehk leiad ka selle koha, mis viga tekitab!</p>
             </div>
             <div class="pilt">
                 <img src="media/rubberduck.jpg" alt="rubber duck">
@@ -51,32 +49,48 @@ Mauris ligula enim, rutrum sed auctor sit amet, rutrum quis orci. Nulla ultrices
         <section class="box">
             <div class="tekst">
                 <h2>How to exit vim</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id tempor ante. Mauris iaculis scelerisque ornare. Nunc urna magna, aliquet sed varius non, tristique vel mi. Curabitur in vestibulum turpis. Maecenas et risus diam. Cras elementum eros mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et consequat dui. Nullam elementum egestas diam, ac placerat ligula ultricies eget.
-
-Maecenas facilisis quam et tincidunt mollis. Donec malesuada ut lectus vitae dignissim. Phasellus sed iaculis dui, ac bibendum elit. Integer ac feugiat nulla. Nullam id orci ut purus fermentum bibendum. Proin pulvinar mattis lorem. Nam malesuada vehicula quam pharetra finibus. Phasellus ornare dui accumsan cursus bibendum. Morbi consectetur odio ut cursus hendrerit. Suspendisse varius luctus ante, quis porta neque consequat at. Integer congue pharetra ligula, quis convallis massa aliquam sit amet. In tincidunt porttitor facilisis. Etiam nec fermentum elit. Ut consectetur odio ut nunc lacinia pulvinar. Donec elit sapien, sodales molestie tellus in, placerat fringilla massa.
-
-Mauris ligula enim, rutrum sed auctor sit amet, rutrum quis orci. Nulla ultrices, lectus ullamcorper accumsan placerat, mauris purus placerat sapien, id vestibulum felis tortor congue nunc. Nullam in nisl commodo, luctus sapien a, vestibulum nisl. Pellentesque gravida commodo turpis, in faucibus lacus.</p>
+                <p>Järgid netis õpetust ning järsku tuleb välja et oled nüüd Vim'is kinni. Väsinud tundidepikkusest lahenduse otsimisest? 
+                    Lahendus on kruus, millel on kirjas täpselt, kuidas Vim sulgeda. Nüüd ei pea sa enam avama seda sama Stack Overflow postitust juba mitmendat korda.</p>
             </div>
             <div class="pilt">
                 <img src="media/exitvim.jpg" alt="vim">
-                <img src="media/exitvimmug.jpg" alt="vim mug">
+                <img src="media/stackoverflow_vim.png" alt="vim mug">
+                <img src="media/exitvimmug2.webp" alt="vim mug 2">
             </div>
         </section>
         <section class="box">
             <div class="tekst">
-                <h2>Vidinad</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id tempor ante. Mauris iaculis scelerisque ornare. Nunc urna magna, aliquet sed varius non, tristique vel mi. Curabitur in vestibulum turpis. Maecenas et risus diam. Cras elementum eros mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et consequat dui. Nullam elementum egestas diam, ac placerat ligula ultricies eget.
-
-Maecenas facilisis quam et tincidunt mollis. Donec malesuada ut lectus vitae dignissim. Phasellus sed iaculis dui, ac bibendum elit. Integer ac feugiat nulla. Nullam id orci ut purus fermentum bibendum. Proin pulvinar mattis lorem. Nam malesuada vehicula quam pharetra finibus. Phasellus ornare dui accumsan cursus bibendum. Morbi consectetur odio ut cursus hendrerit. Suspendisse varius luctus ante, quis porta neque consequat at. Integer congue pharetra ligula, quis convallis massa aliquam sit amet. In tincidunt porttitor facilisis. Etiam nec fermentum elit. Ut consectetur odio ut nunc lacinia pulvinar. Donec elit sapien, sodales molestie tellus in, placerat fringilla massa.
-
-Mauris ligula enim, rutrum sed auctor sit amet, rutrum quis orci. Nulla ultrices, lectus ullamcorper accumsan placerat, mauris purus placerat sapien, id vestibulum felis tortor congue nunc. Nullam in nisl commodo, luctus sapien a, vestibulum nisl. Pellentesque gravida commodo turpis, in faucibus lacus.</p>
+                <h2>RGB LED riba</h2>
+                <p>Ei saa piisavalt magada? Liiga palju ülesandeid? Lisa endale  mõned RGB-tuled ja järsku näed välja nagu Twitch-streamer, kelle elu on korras. 
+                    Muudab igasuguse kurva õpilase laua hetkega häkkeripesaks. Meeleolu +10, tootlikkus ±0.</p>
             </div>
             <div class="pilt">
-                <img src="..." alt="gadgets">
+                <img src="media/rgbstrip.jpg" alt="RGB strip roll">
             </div>
         </section>
+        <section class="box">
+            <div class="tekst">
+                <h2>Järjehoidjad</h2>
+                <p>Torka üks neist Järjehoidjadest õpikusse, et märkida peatükk, mida sa väldid, või kasuta seda haruldase hetke tähistamiseks, mil su frontend ja backend lõpuks kokku lepivad.</p>
+            </div>
+            <div class="pilt">
+                <img src="media/bookmarks.webp" alt="bookmarks">
+            </div>
+        </section>
+        <section class="box">
+            <div class="tekst">
+                <h2>Raspberry Pi</h2>
+                <p>See väike plaat teeb kõike: jooksutab Linuxit, hostib servereid, juhib roboteid ja avaldab muljet inimestele, kes ei tea, mis asi Raspberry Pi on. 
+                    See vidin lihtsalt kiirgab targa inimese energiat. Sa ei pea seda isegi kasutama — piisab pildist ja su IQ tõuseb +7.</p>
+            </div>
+            <div class="pilt">
+                <img src="media/raspi.jpg" alt="Raspberry Pi">
+            </div>
+        </section>
+        <a href="/index.html" class="edasinupp">Tagasi pealehele</a>
     </main>
     <footer>
+        <a href="#algus" class="nupp">Tagasi algusesse</a>
         <p>
             Antud lehekülg on loodud kooliprojektina mittetulunduslikuks kasutamiseks.<br>
             Levitamine ilma omaniku nõusolekuta on keelatud.<br> 

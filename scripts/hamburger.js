@@ -1,6 +1,10 @@
 function toggleNav() {
-            var navElement = document.getElementById("lingid");
-            navElement.classList.toggle("responsive");
-        }
+    var x = document.getElementById("lingid");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
 
-// https://www.w3schools.com/jsref/prop_element_classlist.asp
+// Kood võetud: https://www.w3schools.com/howto/howto_js_mobile_navbar.aspW

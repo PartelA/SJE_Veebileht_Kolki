@@ -1,228 +1,20 @@
+/*---Custom font googlelt---*/
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+/*---Põhiseaded---*/
 html, body {
-    margin: 0 auto;
-    padding: 0;
-    font-family:Arial;
-    background-color: #1C1C1C;
-    color: white;
-}
-
-main {
-    margin: 10%;
-    margin-top: 2%;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
     font-family: arial, sans-serif;
-    background-color: rgba(19, 22, 26, 0.9);
-}
-
-header h1, nav {
-    background-color: rgba(19, 22, 26, 0);
-}
-
-nav {
-    margin: 10px;
-}
-
-img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-.nupp {
-	background: linear-gradient(140deg, #575757b4, #3d3d3dbb);
-	border-radius:28px;
-	border:2px solid greenyellow;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:17px;
-	padding:16px 31px;
-    margin: 2px;
-	text-decoration:none;
-    white-space: nowrap;
-    transition: background 0.4s ease, transform 0.4s ease;
-}
-.nupp:hover {
-	background: linear-gradient(120deg, #575757, #3d3d3d);
-    transform: scale(1.05);
-}
-.nupp:active {
-	position:relative;
-	top:1px;
-}
-
-.intro {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
-}
-
-.intro {
-    background-color: #262626;
-}
-
-.intro .tekst {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-right: 10px;
-}
-
-.intro .pilt {
-    height: auto;
-    border-radius: 10px;
 }
 
 header .nav-icon {
     display: none; 
 }
 
-@media (min-width: 600px) {
-
-    .esimene {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        max-width: 1500px;
-        margin: 0 auto;
-        background-color: #262626;
-    }
-
-    .esimene .pilt {
-        flex-shrink: 0;
-        flex: 1;
-    }
-
-    .esimene .tekst {
-        flex: 2;
-    }
-
-    .esimene .pilt img {
-        width: 100%;
-        max-width: 450px;
-        height: auto;
-        display: block;
-    }
-}
-
-@media (max-width: 600px) {
-    .esimene {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .esimene .pilt img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (min-width: 600px) {
-
-    .teine {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        gap: 20px;
-        max-width: 1500px;
-        margin: 0 auto;
-        background-color: #262626;
-    }
-
-    .teine .pilt {
-        flex-shrink: 0;
-        flex: 1;
-    }
-
-    .teine .tekst {
-        flex: 2;
-    }
-
-    .teine .pilt img {
-        width: 100%;
-        max-width: 450px;
-        height: auto;
-        display: block;
-    }
-}
-
-@media (max-width: 600px) {
-    .teine {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .teine .pilt img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-
-
-.esimene {
-    border-top: 1px solid ;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.teine {
-    border-top: 1px solid ;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.kolmas {
-    border-top: 1px solid ;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    background-color: #262626;
-}
-
-
-footer {
-    border-top: 1px solid greenyellow;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 5px 10px;
-    background: radial-gradient(circle at center, #202020, #0f0f0f);
-}
-
-footer *{
-    background: 0;
-}
-
-footer p {
-    font-size: 12px;
-    max-width: 50vw;
-    color: white;
-}
-
-footer img {
-    max-width: 2vw;
-    min-width: 30px;
-    height: auto;
-    margin: 15px;
-}
-
-
-
+/*---JavaScript Parallax reveal effect---*/
 #js-parallax {
-    width: 100%;
-    height: 700px; 
-    margin-top: 0%;
+    width: 167%;
+    height: 600px; 
+    margin-top: -15%;
     margin-bottom: 5%;
     background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*HVw8w6EZByyTIWHkJx6Odw.jpeg");
     background-attachment: fixed; 
@@ -233,7 +25,8 @@ footer img {
 
 @media (max-width: 600px) {
     #js-parallax {
-        margin-top: 5%;
+        margin-top: 0%;
+        width: 100%;
         margin-bottom: 5%;
         background-attachment: scroll;
         background-size: cover;
@@ -242,7 +35,7 @@ footer img {
     }
 }
 
-
+/*---Kui ekraan on kitsam kui 600px, ehk siis telefoni ekraan, siis muutub navbar ja tekib hamburgerimenüü, script hamburger.js on kasutusel---*/
 @media (max-width: 600px) {
     
     header {
@@ -271,11 +64,7 @@ footer img {
         z-index: 1000;
         flex-direction: column;
     }
-    
-    header #lingid.responsive {
-        display: flex;
-    }
-    
+        
     header #lingid .nupp {
         display: block; 
         border-radius: 0;
@@ -290,55 +79,36 @@ footer img {
     }
 }
 
-
-.light-mode {
-    background-color: antiquewhite;
-    color: #1C1C1C;
-}
-.light-mode .intro {
-    background-color: antiquewhite;
-    color: #1C1C1C;
-}
-
-.light-mode .intro {
-    background-color: rgb(248, 230, 207);
-    color: #1C1C1C;
+.sisu {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 3rem 20vw;
+    text-align: center;
+    align-items: center;
+    
 }
 
-.light-mode .esimene {
-    background-color: rgb(248, 230, 207);
-    color: #1C1C1C;
+.sisu h1 {
+    padding-bottom: 40px;
+    border-bottom: solid 1px whitesmoke;
 }
 
-.light-mode .teine {
-    background-color: rgb(248, 230, 207);
-    color: #1C1C1C;
+@media (max-width: 600px) {
+    .sisu {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .sisu .pilt img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.light-mode .kolmas {
-    background-color: rgb(248, 230, 207);
-    color: #1C1C1C;
-}
-
-body.light-mode header h1{
-    color: white;
-}
-
-body.light-mode header a{
-    color: white;
-}
-
-body.light-mode a {
-    color: brown;
-}
-
-body.light-mode a:active {
-    color: black;
-}
-
-body.light-mode .nupp {
-    color: white;
-}
+/*---Lisatud teiselt alaleleht kastide stiil---*/
 .box {
     max-width: 680px;
 
@@ -376,4 +146,91 @@ body.light-mode .nupp {
     width: auto;
     height: auto;
     border-radius: 12.5px;
+}
+
+/*---Light ja Dark mode seaded leheküljele---*/
+
+body.light-mode .sisu h1{
+    border-color: #1C1C1C;
+}
+
+body.light-mode .täispikkus {
+    color: white;
+}
+
+body.light-mode .sisu {
+    color: #1C1C1C;
+    background-color: antiquewhite;
+}
+
+body.light-mode .box {
+    color: white;
+    border: 0px;
+    background: 
+        linear-gradient(0deg,#131313c3, #292929) padding-box, 
+        linear-gradient(360deg, greenyellow, rgb(0, 0, 0)) border-box;
+}
+
+body.light-mode a {
+    color: white;
+    text-decoration: none;
+}
+
+/*---Back to main nupp---*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.edasinupp {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid yellowgreen;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background-color: #292929;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .edasinupp {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid yellowgreen;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background-color: #292929;
+    z-index: 1;
+
+    margin-bottom: 25px;
+}
+}
+
+.edasinupp::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    width: 150%;
+    height: 150%;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.edasinupp:hover::before {
+    top: -35%;
+    background-color: yellowgreen;
+    transform: translateX(-50%);
 }
