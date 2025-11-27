@@ -4,6 +4,7 @@ html, body {
     padding: 0;
     background-color: #1C1C1C;
     color: white;
+    background-image: url("../media/dark_bg.jpg");
 }
 
 /*------------------------------------ HEADER, NAVBAR ------------------------------------*/
@@ -93,8 +94,10 @@ footer img {
 /*------------------------------------ Light-mode ------------------------------------*/
 
 .light-mode {
-    background-color: antiquewhite;
+    background-image: url("../media/light_bg.png");
+    background-size: 100%, 100%;
     color: #1C1C1C;
+    
 }
 
 body.light-mode header h1{
@@ -115,5 +118,77 @@ body.light-mode a:active {
 
 body.light-mode .nupp {
     color: white;
+}
+
+.light-mode .appearance:hover {
+    background-color: #E1C49C; /* Kõrberoos + Heledam */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+.light-mode .mentality:hover {
+    background-color: #D0A97B; /* Kamel + Heledam */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+.light-mode .intro:hover {
+    background-color: #F7D888; /* Puitkollane + Heledam */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+.light-mode .gadgets:hover {
+    background-color: #DBA876; /* Kuldne Ooker + Heledam */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+/*------------------------------------ Div Background ------------------------------------*/
+div.intro {
+    background-color: #E9C978;
+    border-radius: 20px;
+}
+
+section.appearance {
+    background-color: #D2B48C;
+    border-radius: 20px;
+}
+
+section.gadgets {
+    background-color: #CC9966;
+    border-radius: 20px
+}
+
+section.mentality {
+    background-color: #E2725B;
+    border-radius: 20px
+}
+
+section.appearance:hover {
+    background-color: #B9A37C; /* Kõrberoos */
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+section.mentality:hover {
+    background-color: #AE895B; /* Kamel + Heledam */
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+div.intro:hover {
+    background-color: #D1B568; /* Puitkollane + Heledam */
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+section.gadgets:hover {
+    background-color: #B38555; /* Kuldne Ooker + Heledam */
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+div.intro,
+section.appearance,
+section.gadgets,
+section.mentality {
+    transition: background-color 0.3s ease, 
+                box-shadow 0.3s ease, 
+                transform 0.3s ease; 
 }
 
