@@ -95,6 +95,7 @@ header .nav-icon {
     border-bottom: solid 1px whitesmoke;
 }
 
+/*---Kui ekraan on kitsam kui 600px, siis ka sisu esitusviis muutub telefonisõbralikumaks, ehk siis laiemaks---*/
 @media (max-width: 600px) {
     .sisu {
         flex-direction: column;
@@ -197,6 +198,8 @@ a {
     z-index: 1;
 }
 
+/*---Lisand edasinupule telefonivaates, et see liialt alla Footeri otsa ei vajuks---*/
+
 @media (max-width: 600px) {
     .edasinupp {
     display: inline-block;
@@ -212,7 +215,7 @@ a {
     z-index: 1;
 
     margin-bottom: 25px;
-}
+    }
 }
 
 .edasinupp::before {
