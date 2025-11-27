@@ -80,7 +80,7 @@ header .nav-icon {
 }
 
 .sisu {
-    background-color: #1C1C1C;
+    background-image: url("../media/dark_bg.jpg");
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -160,8 +160,10 @@ body.light-mode .täispikkus {
 }
 
 body.light-mode .sisu {
+    background-image: url("../media/light_bg.png");
+    background-size: 100%, 100%;
     color: #1C1C1C;
-    background-color: antiquewhite;
+
 }
 
 body.light-mode .box {
