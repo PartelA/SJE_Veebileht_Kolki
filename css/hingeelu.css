@@ -24,6 +24,7 @@ html, body {
 
 .sisu {
     background-color: #1C1C1C;
+    background-image: url(https://cdn.pixabay.com/photo/2020/06/06/20/47/seamless-5268142_1280.png);
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -133,6 +134,9 @@ a {
 }
 
 /*Back to main button*/
+body.light-mode .nupp {
+    border:2px solid pink;
+}
 
 body.light-mode .sisu h1{
     border-color: #1C1C1C;
@@ -144,18 +148,30 @@ body.light-mode .täispikkus {
 
 body.light-mode .sisu {
     color: #1C1C1C;
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/14/08/46/pattern-1905818_640.jpg);
     background-color: antiquewhite;
 }
 
 body.light-mode .box {
     color: white;
-    border: 0px;
     background: 
-        linear-gradient(0deg,#131313c3, #292929) padding-box, 
-        linear-gradient(360deg, greenyellow, rgb(0, 0, 0)) border-box;
+        linear-gradient(0deg,#13131320, #29292950) padding-box, 
+        linear-gradient(180deg, rgb(255, 47, 231), rgb(255, 255, 255)) border-box;
 }
 
 body.light-mode a {
     color: white;
     text-decoration: none;
+}
+
+body.light-mode footer {
+    border-top: 1px solid rgb(255, 47, 231);
+}
+
+body.light-mode .edasinupp {
+    border: 2px solid rgb(255, 47, 231);
+}
+
+body.light-mode .edasinupp:hover::before {
+    background-color: rgb(255, 47, 231);
 }
