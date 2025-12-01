@@ -4,4 +4,4 @@ window.addEventListener('scroll', function(e) {
 });
 
 
-// Võetud: https://codepen.io/kreitlow/pen/BLNYRR //
+// Võetud: https://codepen.io/kreitlow/pen/BLNYRR, kasutusel pildi positsioneerimisel alamlehtede ülaosas //
